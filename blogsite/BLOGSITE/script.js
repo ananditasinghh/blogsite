@@ -29,7 +29,7 @@
     // For now, simply navigate to another page after a short delay
     setTimeout(() => {
       // You can replace the URL with the actual page you want to redirect to
-      window.location.href = 'blogsite/blogpage/blogpage.html';
+      window.location.href = 'https://ananditasinghh.github.io/blogpage/';
     }, 900); // Adjust the delay as needed
   }
 
