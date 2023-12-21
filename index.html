@@ -3,10 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="blogsite/BLOGSITE/style.css">
   <title>Your Webpage</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #FFFCF2;
+    
+      
+    }
 
+    h2{text-align: center;}
+
+    #navbar {
+      background-color: #F0D29E;
+      padding: 15px;
+      text-align: center;
+      width: initial;
+    }
+
+    #navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5B2906;
+      cursor: pointer;
+    }
+
+    #image-section {
+      text-align: center;
+      padding: 50px;
+      height: 900px;
+      width: 750px;
+      margin: 0 auto; /* Center the images */
+    }
+
+    #slider {
+      width: 800px;
+      overflow: hidden;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #slider img {
+      width: 800px;
+      height: 800px;
+      display: none;
+    }
+
+    #caption {
+      text-align: center;
+      color: #5B2906;
+    }
+
+    #about-section {
+      background-color: #FFFCF2;
+      padding: 50px;
+      text-align: left;
+    }
+
+    #blog-section {
+  background-color: #FFFCF2;
+  padding: 50px;
+  text-align: left;
+}
+
+.blog-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.blog-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-image:hover {
+  transform: scale(1.25);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  border-color: #5B2906; /* Choose your desired border color */
+}
+
+.blog-content {
+  flex: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.blog-title {
+  font-size: 24px;
+  color: #5B2906;
+  margin-bottom: 10px;
+}
+
+.blog-description {
+  color: #696969;
+  margin-bottom: 15px;
+}
+
+    .read-more {
+      text-decoration: none;
+      color: #5B2906;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .read-more:hover {
+      color: #8B4513; /* Darker color on hover */
+    }
+
+
+    #contact-section {
+      background-color: #FFFCF2;
+      padding: 50px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+/* Add this to your existing styles */
+.load-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#load-more-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #5B2906;
+  color: #FFFCF2;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Added transform property */
+}
+
+#load-more-btn:hover {
+  background-color: #8B4513;
+  transform: scale(1.05); /* Add a scale transformation on hover */
+}
+
+#load-more-btn:active {
+  transform: scale(0.95); /* Add a scale transformation when the button is clicked */
+}
+
+/* Add this to your existing styles */
+.blog-container.hidden {
+  display: none;
+}
+
+    #social-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    #social-icons img {
+      margin: 0 10px;
+      margin-bottom: 0px;
+    
+    }
+
+    #bottom-navbar {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      background-color: #F0D29E;
+      padding: 1px;
+      text-align: center;
+      color: #5B2906;
+    }
+  </style>
 </head>
 <body>
 
@@ -19,9 +191,9 @@
 
 <div id="image-section">
   <div id="slider">
-    <img src="blogsite/images/breezyhair.png" alt="Image 1">
-    <img src="blogsite/images/journal.png" alt="Image 2">
-    <img src="blogsite/images/reading.png" alt="Image 3">
+    <img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-16 at 1.46.23 AM.png" alt="Image 1">
+    <img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-16 at 2.45.59 AM.png" alt="Image 2">
+    <img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-16 at 2.37.06 AM.png" alt="Image 3">
   </div>
   <div id="caption">
     <p>HELLOOOOO</p>
@@ -58,7 +230,7 @@
   <h2>My Blog</h2>
 
   <div class="blog-container">
-    <img class="blogsite/images/blog1.png" alt="Blog 1">
+    <img class="blog-image" src="/Users/ananditasingh/Desktop/Screenshot 2023-12-19 at 6.31.50 PM.png" alt="Blog 1">
     <div class="blog-content">
       <h3 class="blog-title">Blog Title 1</h3>
       <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -67,7 +239,7 @@
   </div>
 
   <div class="blog-container">
-    <img class="blogsite/images/blog2.png" alt="Blog 2">
+    <img class="blog-image" src="/Users/ananditasingh/Desktop/Screenshot 2023-12-19 at 6.32.37 PM.png" alt="Blog 2">
     <div class="blog-content">
       <h3 class="blog-title">Blog Title 2</h3>
       <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -76,7 +248,7 @@
   </div>
 
   <div class="blog-container">
-    <img class="blog-image" src="blogsite/images/blog3.png" alt="Blog 3">
+    <img class="blog-image" src="/Users/ananditasingh/Desktop/Screenshot 2023-12-19 at 6.35.05 PM.png" alt="Blog 3">
     <div class="blog-content">
       <h3 class="blog-title">Blog Title 3</h3>
       <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -94,27 +266,71 @@
 
 
 </div>
+
 <div id="contact-section">
 
     <div id="social-icons">
-        <img src = "blogsite/images/linkedinimg.png"
+        <img src = "/Users/ananditasingh/Desktop/Screenshot 2023-12-17 at 3.16.29 AM.png"
         alt="Your Image" height="50px" width="50px">  
         <br><br><br><br>
-        <img src = "blogsite/images/twitterimg.png"
+        <img src = "/Users/ananditasingh/Desktop/Screenshot 2023-12-17 at 3.17.21 AM.png"
         alt="Your Image" height="50px" width="50px">
     
+        <!-- Add more social icons as needed -->
         
       </div>
       <br>
+
+  
+  
+
 </div>
 
-<img src="blogsite/images/contact me .png" alt="Your Image" height="690px" width="1553px">
+
+<img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-16 at 2.42.17 AM.png" alt="Your Image" height="690px" width="1553px">
 <br><br>
 
 <div id="bottom-navbar">
+
   <p>&copy; 2023 Your Website. All rights reserved.</p>
 </div>
 
-<script src="blogsite/BLOGSITE/script.js"></script>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('#slider img');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Auto slide every 3 seconds
+  setInterval(nextSlide, 3000);
+
+  function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function loadMoreBlogs() {
+    // Add a fade-out effect before navigating to the new page
+    document.body.style.transition = 'opacity 0.5s';
+    document.body.style.opacity = 0;
+
+    // Simulate loading more blogs (replace this with your actual logic)
+    // For now, simply navigate to another page after a short delay
+    setTimeout(() => {
+      // You can replace the URL with the actual page you want to redirect to
+      window.location.href = 'https://ananditasinghh.github.io/blogpage/';
+    }, 900); // Adjust the delay as needed
+  }
+
+
+</script>
 </body>
 </html>
