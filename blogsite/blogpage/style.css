@@ -20,7 +20,7 @@ body.dark-mode {
 #intro {
     position: relative;
     height: 120vh;
-    background: url('blogsite/images/blogpagebackground.png') center/cover no-repeat;
+    background: url('images/blogpagebackground.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
