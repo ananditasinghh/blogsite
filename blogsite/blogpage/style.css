@@ -20,7 +20,7 @@ body.dark-mode {
 #intro {
     position: relative;
     height: 120vh;
-    background: url('/Users/ananditasingh/Desktop/Screenshot 2023-12-19 at 10.43.05 PM.png') center/cover no-repeat;
+    background: url('blogsite/images/blogpagebackground.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,8 +71,8 @@ transition: transform 0.3s ease-in-out;
 
 .blog-image:hover {
 transform: scale(1.25);
-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-border-color: #5B2906; /* Choose your desired border color */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+border-color: #5B2906; 
 }
 
 .blog-title {
@@ -102,7 +102,7 @@ transition: color 0.3s;
 }
 
 .read-more:hover {
-color: rgb(217, 145, 94); /* Darker color on hover */
+color: rgb(217, 145, 94); 
 }
 
 #dark-mode-toggle {
