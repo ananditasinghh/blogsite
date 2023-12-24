@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family:'Montserrat', sans-serif;
+      font-size:large;
+      background-color: #FFFCF2;
+    }
+
+    #bottom-navbar {
+      margin-top: 240px;
+      width: 100%;
+      background-color: #F0D29E;
+      padding: 1px;
+      text-align: center;
+      color: #5B2906;
+    }
+
+    .image-section {
+      text-align: center;
+      margin-bottom: 100px;
+      margin-top: 20px;
+      
+    }
+
+    .blog-image {
+      margin-top: 70px;
+      height: 600px;
+      width: 600px;
+      border-radius: 100px;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .blog-image:hover {
+     transform: scale(1.05);
+     
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+     border-color: #5B2906; /* Choose your desired border color */
+     border-radius: 300px;
+     }
+
+    #caption {
+      margin-top: 10px;
+    }
+
+    .blog-container {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .realistic-shadow {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-content {
+      margin-left: 50px;
+      margin-right: 30px;
+      padding-top: 50px;
+    }
+
+    .moreserrat-font {
+      font-family:Arial, Helvetica, sans-serif;
+      text-align: left;
+      font-style: normal;
+    }
+
+    .actions {
+      margin-top: 7px;
+    }
+
+    #commentDialog {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #commentDialog textarea {
+      margin-bottom: 10px;
+      border: 2px solid #FFFCF2;
+      transition: background-color 0.3s ease;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #commentDialog textarea:hover {
+      background-color: #f5efdb;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .comment {
+      margin-left: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      color:#5B2906;
+      text-align: left;
+      padding-top: 30px;
+      
+    }
+
+    #commentsContainer {
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+
+    .post-comment {
+      background-color: #e8dfdc;
+      margin-left: 239px;
+      height: 50px;
+      width: 70px;
+      border: 1px #FFFCF2;
+      transition: background-color 0.3s ease;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-comment:hover {
+      background-color: #f5efdb;
+      
+    }
+
+    .comment-bg {
+      background-color: #FFFCF2;
+      color: rgb(21, 21, 21);
+      margin-left: 2px;
+      height: 100px;
+      width: 300px;
+    }
+
+
+    #backButton {
+      position: absolute;
+      top: 40px;
+      left: 70px;
+      cursor: pointer;
+    }
+
+    #likeButton {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+
+</style>
+
+<body>
+
+    <div id="backButton" onclick="goBack()">
+        <!-- You can replace the content inside with your backward arrow image -->
+        &#8592;
+    </div>
+
+    <div class="image-section">
+        <img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-19 at 6.35.05 PM.png" alt="Image 3" class="blog-image">
+        <div id="caption">
+       
+    </div>
+
+
+    <div class="blog-container">
+
+        <div class="blog-content">
+            <p class="moreserrat-font">
+                hello Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Pulvinar pellentesque 
+                habitant morbi tristique senectus et netus et malesuada. Nec nam aliquam 
+                sem et tortor consequat. Faucibus nisl tincidunt eget nullam non nisi est sit.
+                 Viverra justo nec ultrices dui. Leo urna molestie at elementum eu facilisis sed
+                  odio morbi. Adipiscing tristique risus nec feugiat in. Urna condimentum mattis
+                   pellentesque id nibh tortor id aliquet lectus. At urna condimentum mattis pellentesque
+                    id nibh. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. 
+                    Ut porttitor leo a diam sollicitudin. Metus dictum at tempor commodo.
+                     Sit amet nisl suscipit adipiscing bibendum est ultricies. Imperdiet massa tincidunt
+                      nunc pulvinar sapien et ligula ullamcorper malesuada. Malesuada proin libero nunc consequat
+                       interdum varius sit. Euismod elementum nisi quis eleifend. Urna neque viverra justo nec. Vitae 
+                       ultricies leo integer malesuada nunc vel risus. Sapien nec sagittis aliquam malesuada bibendum arcu vitae.
+                        Nibh mauris cursus mattis molestie a iaculis.
+            </p>
+            <p class="moreserrat-font">
+                hello Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Pulvinar pellentesque 
+                habitant morbi tristique senectus et netus et malesuada. Nec nam aliquam 
+                sem et tortor consequat. Faucibus nisl tincidunt eget nullam non nisi est sit.
+                 Viverra justo nec ultrices dui. Leo urna molestie at elementum eu facilisis sed
+                  odio morbi. Adipiscing tristique risus nec feugiat in. Urna condimentum mattis
+                   pellentesque id nibh tortor id aliquet lectus. At urna condimentum mattis pellentesque
+                    id nibh. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. 
+                    Ut porttitor leo a diam sollicitudin. Metus dictum at tempor commodo.
+                     Sit amet nisl suscipit adipiscing bibendum est ultricies. Imperdiet massa tincidunt
+                      nunc pulvinar sapien et ligula ullamcorper malesuada. Malesuada proin libero nunc consequat
+                       interdum varius sit. Euismod elementum nisi quis eleifend. Urna neque viverra justo nec. Vitae 
+                       ultricies leo integer malesuada nunc vel risus. Sapien nec sagittis aliquam malesuada bibendum arcu vitae.
+                        Nibh mauris cursus mattis molestie a iaculis.
+            </p>
+
+            <p class="moreserrat-font">
+                hello Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Pulvinar pellentesque 
+                habitant morbi tristique senectus et netus et malesuada. Nec nam aliquam 
+                sem et tortor consequat. Faucibus nisl tincidunt eget nullam non nisi est sit.
+                 Viverra justo nec ultrices dui. Leo urna molestie at elementum eu facilisis sed
+                  odio morbi. Adipiscing tristique risus nec feugiat in. Urna condimentum mattis
+                   pellentesque id nibh tortor id aliquet lectus. At urna condimentum mattis pellentesque
+                    id nibh. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. 
+                    Ut porttitor leo a diam sollicitudin. Metus dictum at tempor commodo.
+                     Sit amet nisl suscipit adipiscing bibendum est ultricies. Imperdiet massa tincidunt
+                      nunc pulvinar sapien et ligula ullamcorper malesuada. Malesuada proin libero nunc consequat
+                       interdum varius sit. Euismod elementum nisi quis eleifend. Urna neque viverra justo nec. Vitae 
+                       ultricies leo integer malesuada nunc vel risus. Sapien nec sagittis aliquam malesuada bibendum arcu vitae.
+                        Nibh mauris cursus mattis molestie a iaculis.
+            </p>
+
+            <p class="moreserrat-font">
+                hello Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Pulvinar pellentesque 
+                habitant morbi tristique senectus et netus et malesuada. Nec nam aliquam 
+                sem et tortor consequat. Faucibus nisl tincidunt eget nullam non nisi est sit.
+                 Viverra justo nec ultrices dui. Leo urna molestie at elementum eu facilisis sed
+                  odio morbi. Adipiscing tristique risus nec feugiat in. Urna condimentum mattis
+                   pellentesque id nibh tortor id aliquet lectus. At urna condimentum mattis pellentesque
+                    id nibh. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. 
+                    Ut porttitor leo a diam sollicitudin. Metus dictum at tempor commodo.
+                     Sit amet nisl suscipit adipiscing bibendum est ultricies. Imperdiet massa tincidunt
+                      nunc pulvinar sapien et ligula ullamcorper malesuada. Malesuada proin libero nunc consequat
+                       interdum varius sit. Euismod elementum nisi quis eleifend. Urna neque viverra justo nec. Vitae 
+                       ultricies leo integer malesuada nunc vel risus. Sapien nec sagittis aliquam malesuada bibendum arcu vitae.
+                        Nibh mauris cursus mattis molestie a iaculis.
+            </p>
+            
+            
+            <br><br><br><br><br><br>
+
+            <div class="actions">
+                <button id="likeButton" onclick="toggleLike()">
+                    <img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-24 at 10.08.42 PM.png" alt="Heart" style="width: 40px; height: 40px;">
+                </button>
+                <span id="likeCount">0 Likes</span>
+            </div>
+
+
+
+            <div id="commentDialog" class="hidden">
+                <textarea id="commentInput" placeholder="Write your comment..." class="comment-bg"></textarea>
+                <button onclick="postComment()" class = "post-comment">Post</button>
+            </div>
+
+            <div id="commentsContainer">
+                <!-- Comments will be appended here -->
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div id = bottom-navbar>
+        <p>&copy; 2023 Your Blog Name. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        let isLiked = false;
+        let likeCount = 0;
+        let comments = [];
+
+        function toggleLike() {
+            isLiked = !isLiked;
+            likeCount = isLiked ? likeCount + 1 : likeCount - 1;
+
+            document.getElementById('likeButton').style.color = isLiked ? 'red' : 'black';
+            document.getElementById('likeCount').innerText = likeCount + (likeCount === 1 ? ' Like' : ' Likes');
+
+            // Store the like state in localStorage
+            localStorage.setItem('isLiked', isLiked);
+            // Store the like count in localStorage
+            localStorage.setItem('likeCount', likeCount);
+        }
+
+        function showCommentDialog() {
+            document.getElementById('commentDialog').classList.toggle('hidden');
+        }
+
+        function postComment() {
+            const commentInput = document.getElementById('commentInput');
+            const comment = commentInput.value.trim();
+
+            if (comment !== "") {
+                // Store the comment in the comments array
+                comments.push(comment);
+                
+                // Display the comments
+                displayComments();
+
+                // Store the comments array in localStorage
+                localStorage.setItem('comments', JSON.stringify(comments));
+
+                // Clear the comment input
+                commentInput.value = "";
+
+                // Close the comment dialog
+                showCommentDialog();
+            }
+        }
+
+        function displayComments() {
+            const commentsContainer = document.getElementById('commentsContainer');
+            commentsContainer.innerHTML = "";
+
+            comments.forEach(comment => {
+                const commentElement = document.createElement('div');
+                commentElement.classList.add('comment');
+                commentElement.textContent = `Comment: ${comment}`;
+                commentsContainer.appendChild(commentElement);
+            });
+        }
+
+        function showTranslationOptions() {
+            // Translation logic (unchanged from previous code)
+        }
+
+        // Load initial state from localStorage on page load
+        window.onload = function () {
+            isLiked = localStorage.getItem('isLiked') === 'true';
+            likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
+            comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+            document.getElementById('likeButton').style.color = isLiked ? 'red' : 'black';
+            document.getElementById('likeCount').innerText = likeCount + (likeCount === 1 ? ' Like' : ' Likes');
+
+            displayComments();
+        };
+
+        function goBack() {
+            window.history.back();
+        }
+
+  
+
+    </script>
+
+
+</body>
+</html>
