@@ -21,16 +21,15 @@
   }
 
   function loadMoreBlogs() {
-    // Add a fade-out effect before navigating to the new page
+    
     document.body.style.transition = 'opacity 0.5s';
     document.body.style.opacity = 0;
 
-    // Simulate loading more blogs (replace this with your actual logic)
-    // For now, simply navigate to another page after a short delay
+   
     setTimeout(() => {
-      // You can replace the URL with the actual page you want to redirect to
+     
       window.location.href = 'https://ananditasinghh.github.io/blogpage/';
-    }, 900); // Adjust the delay as needed
+    }, 900); 
   }
 
 
