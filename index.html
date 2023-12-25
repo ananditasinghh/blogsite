@@ -11,7 +11,6 @@
       padding: 30px;
       font-family: 'Montserrat', sans-serif;
       background-color: #FFFCF2;
-    
       
     }
 
@@ -88,7 +87,7 @@
 
 .blog-image:hover {
   transform: scale(1.25);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
   border-color: #5B2906; 
 }
 
@@ -117,7 +116,7 @@
     }
 
     .read-more:hover {
-      color: #8B4513; 
+      color: #8B4513;
     }
 
 
@@ -147,6 +146,7 @@
 #load-more-btn:hover {
   background-color: #8B4513;
   transform: scale(1.05); 
+}
 
 #load-more-btn:active {
   transform: scale(0.95); 
@@ -178,15 +178,12 @@
       color: #5B2906;
     }
 
-    
     #title{
-      height: 50px;
-      width: 50px;
-      font-size: 100px;
+      height: 40px;
+      width: 40px;
+      font-size: 50px;
       margin-left: 315px;
     }
-
-    
   </style>
 </head>
 <body>
@@ -200,15 +197,15 @@
 
 <div id="image-section">
   <div id="slider">
-    <img src="images/breezyhair.png" alt="Image 1">
-    <img src="images/journal.png" alt="Image 2">
-    <img src="images/reading.png" alt="Image 3">
+    <img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-16 at 1.46.23 AM.png" alt="Image 1">
+    <img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-16 at 2.45.59 AM.png" alt="Image 2">
+    <img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-16 at 2.37.06 AM.png" alt="Image 3">
   </div>
   <div id="caption">
-    <div id = "title"> <p><b>प्रवाह</b></p></div>
+   <div id = "title"> <p><b>प्रवाह</b></p></div>
   </div>
 </div>
-
+<br><br><br>
 <div id="about-section">
     <h2>About me</h2>
     <p>
@@ -239,35 +236,35 @@
   <h2>My Blog</h2>
 
   <div class="blog-container">
-    <img class="blog-image" src="blog1.png" alt="Blog 1">
+    <img class="blog-image" src="/Users/ananditasingh/Desktop/Screenshot 2023-12-19 at 6.31.50 PM.png" alt="Blog 1">
     <div class="blog-content">
       <h3 class="blog-title">Blog Title 1</h3>
       <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a class="read-more" href="https://ananditasinghh.github.io/postpage/">Read More</a>
+      <a class="read-more" href="#read-more1">Read More</a>
     </div>
   </div>
 
   <div class="blog-container">
-    <img class="blog-image" src="blog2.png" alt="Blog 2">
+    <img class="blog-image" src="/Users/ananditasingh/Desktop/Screenshot 2023-12-19 at 6.32.37 PM.png" alt="Blog 2">
     <div class="blog-content">
       <h3 class="blog-title">Blog Title 2</h3>
       <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a class="read-more" href="https://ananditasinghh.github.io/postpage/">Read More</a>
+      <a class="read-more" href="#read-more2">Read More</a>
     </div>
   </div>
 
   <div class="blog-container">
-    <img class="blog-image" src="blog3.png" alt="Blog 3">
+    <img class="blog-image" src="/Users/ananditasingh/Desktop/Screenshot 2023-12-19 at 6.35.05 PM.png" alt="Blog 3">
     <div class="blog-content">
       <h3 class="blog-title">Blog Title 3</h3>
       <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a class="read-more" href="https://ananditasinghh.github.io/postpage/">Read More</a>
+      <a class="read-more" href="#read-more3">Read More</a>
     </div>
   </div>
 
 
 
-
+<!-- Load More button -->
 <div class="load-more-container">
   <button id="load-more-btn" onclick="loadMoreBlogs()">Load More</button>
 </div>
@@ -279,18 +276,22 @@
 <div id="contact-section">
 
     <div id="social-icons">
-        <img src = "images/linkedinimg.png"
+        <img src = "/Users/ananditasingh/Desktop/Screenshot 2023-12-17 at 3.16.29 AM.png"
         alt="Your Image" height="50px" width="50px">  
         <br><br><br><br>
-        <img src = "images/twitterimg.png"
-        alt="Your Image" height="50px" width="50px">      
+        <img src = "/Users/ananditasingh/Desktop/Screenshot 2023-12-17 at 3.17.21 AM.png"
+        alt="Your Image" height="50px" width="50px">
+    
+        
         
       </div>
       <br>
+ 
+
 </div>
 
 
-<img src="images/contact me .png" alt="Your Image" height="690px" width="1553px">
+<img src="/Users/ananditasingh/Desktop/Screenshot 2023-12-16 at 2.42.17 AM.png" alt="Your Image" height="690px" width="1553px">
 <br><br>
 
 <div id="bottom-navbar">
@@ -313,7 +314,7 @@
     showSlide(currentSlide);
   }
 
-
+  // Auto slide every 3 seconds
   setInterval(nextSlide, 3000);
 
   function scrollToSection(sectionId) {
@@ -321,18 +322,20 @@
   }
 
   function loadMoreBlogs() {
-  
+    
     document.body.style.transition = 'opacity 0.5s';
     document.body.style.opacity = 0;
 
    
     setTimeout(() => {
-     
-      window.location.href = 'https://ananditasinghh.github.io/blogpage/';
+      
+      window.location.href = '/Users/ananditasingh/blogpage.html';
     }, 900); 
   }
 
 
 </script>
+</body>
+</html>
 </body>
 </html>
