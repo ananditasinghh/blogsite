@@ -1,0 +1,136 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFCF2;
+    
+
+}
+
+body.dark-mode {
+    
+    background-color: #000000;
+    transition:3s;
+    color: #ffffff;
+
+}
+
+
+#intro {
+    position: relative;
+    height: 120vh;
+    background: url('images /blogpagebackground.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+#blog-button {
+    position:absolute;
+    top: 75px;
+    left: 220px;
+    color: #3498db;
+}
+
+#close-button {
+    position:absolute;
+    top: 09px;
+    left: 261px;
+    font-size: 54px;
+    color: rgb(220, 0, 0);
+    cursor: pointer;
+}
+
+
+#blog-section {
+
+padding: 50px;
+text-align: left;
+}
+
+
+.blog-container {
+display: flex;
+align-items: center;
+margin-bottom: 40px;
+margin-left: 160px;
+}
+
+.blog-image {
+width: 200px;
+height: 200px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-right: 20px;
+margin-left: 60px;
+transition: transform 0.3s ease-in-out;
+}
+
+.blog-image:hover {
+transform: scale(1.25);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+border-color: #5B2906; /* Choose your desired border color */
+}
+
+.blog-title {
+font-size: 24px;
+font-weight:bold;
+color: #d97c39;
+margin-bottom: 10px;
+}
+
+.blog-description {
+color: #a19b9b;
+
+margin-bottom: 15px;
+}
+
+.blog-content {
+flex: 1;
+transition: transform 0.2s ease-in-out;
+margin-left: 40px;
+}
+
+.read-more {
+text-decoration: none;
+color: #d97c39;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+.read-more:hover {
+color: rgb(217, 145, 94); /* Darker color on hover */
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #253f50;
+    color: #fff;
+    border-radius: 6px;
+}
+
+#back-button {
+    position: absolute;
+    top: 96px;
+    left: 365px;
+    size-adjust:50px;
+    padding: 10px;
+    background-color: hwb(0 100% 0%);
+    color: rgb(2, 1, 1);
+    border:black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.heading{
+text-align: center;
+align-items: center;
+justify-content: center;
+
+}

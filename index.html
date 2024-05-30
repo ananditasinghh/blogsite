@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap">
+
+</head>
+<body>
+
+<div id="navbar">
+  <a href="#home" onclick="scrollToSection('image-section')">Home</a>
+  <a href="#about" onclick="scrollToSection('about-section')">About</a>
+  <a href="#blogs" onclick="scrollToSection('blog-section')">Blogs</a>
+  <a href="#contact" onclick="scrollToSection('contact-section')">Contact</a>
+</div>
+
+<div id="image-section">
+  <div id="slider">
+    <img src="images /breezyhair.png" alt="Image 1">
+    <img src="images /journal.png" alt="Image 2">
+    <img src="images /reading.png" alt="Image 3">
+  </div>
+  <div id="caption">
+   <div id = "title"> <p><b>प्रवाह</b></p></div>
+  </div>
+</div>
+<br><br><br>
+<div id="about-section">
+    <h2>About me</h2>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+     incididunt ut labore et dolore magna aliqua. Neque volutpat ac tincidunt vitae 
+     semper quis. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit.
+      Sit amet tellus cras adipiscing enim eu. </p>
+
+    <p>
+
+    Non diam phasellus vestibulum lorem sed. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam.
+     Nunc sed id semper risus in hendrerit gravida rutrum quisque. Congue quisque egestas diam in arcu. Libero
+      justo laoreet sit amet cursus. Ac orci phasellus egestas tellus. Viverra aliquet eget sit amet tellus cras
+       adipiscing enim eu. Enim facilisis gravida neque convallis a cras semper auctor neque. Mauris vitae ultricies
+        leo integer malesuada nunc vel risus.
+</p>
+  
+
+<div id="blog-section">
+  <h2>My Blog</h2>
+
+  <div class="blog-container">
+    <img class="blog-image" src="images /blog3.png" alt="Blog 1">
+    <div class="blog-content">
+      <h3 class="blog-title">Blog Title 1</h3>
+      <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a class="read-more" href="postpage.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="blog-container">
+    <img class="blog-image" src="images /blog3.png" alt="Blog 2">
+    <div class="blog-content">
+      <h3 class="blog-title">Blog Title 2</h3>
+      <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a class="read-more" href="postpage.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="blog-container">
+    <img class="blog-image" src="images /blog3.png" alt="Blog 3">
+    <div class="blog-content">
+      <h3 class="blog-title">Blog Title 3</h3>
+      <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a class="read-more" href="postpage.html">Read More</a>
+    </div>
+  </div>
+
+
+
+<!-- Load More button -->
+<div class="load-more-container">
+  <button id="load-more-btn" onclick="loadMoreBlogs()">Load More</button>
+</div>
+
+
+
+</div>
+
+<div id="contact-section">
+
+    <div id="social-icons">
+        <img src = "images /linkedinimg.png"
+        alt="Your Image" height="50px" width="50px">  
+        <br><br><br><br>
+        <img src = "images /twitterimg.png"
+        alt="Your Image" height="50px" width="50px">
+    
+        
+        
+      </div>
+      <br>
+ 
+
+</div>
+
+
+<img src="images /contact me .png" alt="Your Image" height="690px" width="1553px">
+<br><br>
+
+<div id="bottom-navbar">
+
+  <p>&copy; 2023 Pravah. All rights reserved.</p>
+</div>
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
