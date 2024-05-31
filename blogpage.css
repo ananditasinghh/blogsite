@@ -11,17 +11,21 @@ body.dark-mode {
     transition: background-color 0.3s, color 0.3s;
 }
 
-#intro_0, #intro_1 {
+
+#intro_0,
+#intro_1 {
     position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+    height: 50vh; /* Adjust the height as needed */
+    background-size: contain; /* Ensure the background image is contained within the element */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center align the background image */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
 }
+
 
 #intro_0 {
     background-image: url('WhatsApp Image 2024-05-31 at 15.44.20 copy.jpeg');
