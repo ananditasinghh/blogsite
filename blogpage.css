@@ -7,65 +7,63 @@ body {
 
 body.dark-mode {
     background-color: #000000;
-    transition: 3s;
     color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-
-#intro_0{
+#intro_0, #intro_1 {
     position: relative;
-    height: 100vh; /* Adjusted for better fit on small screens */
-    background: url('WhatsApp Image 2024-05-31 at 15.44.20 copy.jpeg') center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+}
+
+#intro_0 {
+    background-image: url('WhatsApp Image 2024-05-31 at 15.44.20 copy.jpeg');
 }
 
 #intro_1 {
-    position: relative;
-    height: 100vh; /* Adjusted for better fit on small screens */
-    background: url('WhatsApp Image 2024-05-31 at 15.44.20.jpeg') center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+    background-image: url('WhatsApp Image 2024-05-31 at 15.44.20.jpeg');
 }
 
-
-
 #blog-section {
-    padding: 20px; /* Adjusted for better fit on small screens */
+    padding: 20px;
     text-align: left;
 }
 
-/* Flexbox adjustments for responsiveness */
+.heading {
+    text-align: center;
+}
+
 .blog-container {
     display: flex;
-    flex-direction: column; /* Column layout for better fit on small screens */
+    flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
-    margin-left: auto; /* Centered horizontally */
-    margin-right: auto; /* Centered horizontally */
-    max-width: 800px; /* Max width to limit the width on larger screens */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
 .blog-image {
-    width: 100%; /* Full width on small screens */
-    max-width: 200px; /* Limit max width */
-    height: auto; /* Auto height */
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Margin below image */
+    margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 }
 
 .blog-image:hover {
-    transform: scale(1.05); /* Slightly reduced scale for smaller screens */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-    border-color: #5B2906; /* Choose your desired border color */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #5B2906;
 }
 
 .blog-title {
@@ -73,20 +71,20 @@ body.dark-mode {
     font-weight: bold;
     color: #d97c39;
     margin-bottom: 10px;
-    text-align: center; /* Centered text */
+    text-align: center;
 }
 
 .blog-description {
     color: #a19b9b;
     margin-bottom: 15px;
-    text-align: center; /* Centered text */
+    text-align: center;
 }
 
 .blog-content {
     flex: 1;
     transition: transform 0.2s ease-in-out;
-    margin-left: 0; /* Reset margin for smaller screens */
-    text-align: center; /* Centered text */
+    margin-left: 0;
+    text-align: center;
 }
 
 .read-more {
@@ -97,7 +95,7 @@ body.dark-mode {
 }
 
 .read-more:hover {
-    color: rgb(217, 145, 94); /* Darker color on hover */
+    color: rgb(217, 145, 94);
 }
 
 #dark-mode-toggle {
@@ -112,41 +110,21 @@ body.dark-mode {
 }
 
 #back-button {
-    position: fixed; /* Changed to fixed for better positioning */
-    top: 20px; /* Adjusted for better fit on small screens */
-    left: 20px; /* Adjusted for better fit on small screens */
+    position: fixed;
+    top: 20px;
+    left: 20px;
     padding: 10px;
-    background-color: hwb(0 100% 0%);
-    color: rgb(2, 1, 1);
-    border: black;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.heading {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Media queries for larger screens */
 @media (min-width: 600px) {
-    #blog-button {
-        left: 50px;
-    }
-
-    #close-button {
-        left: 150px;
-    }
-
-    #blog-section {
-        padding: 50px;
-    }
-
     .blog-container {
         flex-direction: row;
         justify-content: flex-start;
-        margin-left: 160px;
     }
 
     .blog-content {
@@ -159,9 +137,14 @@ body.dark-mode {
         height: 200px;
         margin-right: 20px;
     }
+}
 
-    #back-button {
-        top: 96px;
-        left: 365px;
+@media (min-width: 1024px) {
+    #blog-section {
+        padding: 50px;
+    }
+
+    .blog-container {
+        max-width: 1000px;
     }
 }
