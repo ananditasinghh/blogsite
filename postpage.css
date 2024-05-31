@@ -216,4 +216,13 @@ body {
     padding: 5px;
     font-size: small;
   }
+  
+  /* Adjusting the bookman.png image for mobile view */
+  img[alt="Your Image"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Center the image with auto margins */
+  }
+  
 }
