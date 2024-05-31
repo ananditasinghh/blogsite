@@ -11,10 +11,11 @@ body.dark-mode {
     color: #ffffff;
 }
 
-#intro {
+
+#intro_0{
     position: relative;
     height: 100vh; /* Adjusted for better fit on small screens */
-    background: url('blogpagebackground.png') center/cover no-repeat;
+    background: url('WhatsApp Image 2024-05-31 at 15.44.20 copy.jpeg') center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,21 +23,18 @@ body.dark-mode {
     text-align: center;
 }
 
-#blog-button {
-    position: absolute;
-    top: 20px; /* Adjusted for better fit on small screens */
-    left: 20px; /* Adjusted for better fit on small screens */
-    color: #3498db;
+#intro_1 {
+    position: relative;
+    height: 100vh; /* Adjusted for better fit on small screens */
+    background: url('WhatsApp Image 2024-05-31 at 15.44.20.jpeg') center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-#close-button {
-    position: absolute;
-    top: 9px;
-    left: 100px; /* Adjusted for better fit on small screens */
-    font-size: 54px;
-    color: rgb(220, 0, 0);
-    cursor: pointer;
-}
+
 
 #blog-section {
     padding: 20px; /* Adjusted for better fit on small screens */
