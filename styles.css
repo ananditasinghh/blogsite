@@ -145,7 +145,8 @@ h2 {
   height: 40px;
   width: 40px;
   font-size: 50px;
-  margin-left: 315px;
+  padding: 50px;
+  text-align: left;
 }
 
 /* Load more button styling */
@@ -246,5 +247,6 @@ h2 {
     font-size: 30px;
     margin-left: 0;
     align-items: center;
+    padding: 20px;
   }
 }
