@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="postpage.css">
+</head>
+
+<body>
+
+    <div id="backButton" onclick="goBack()">
+        
+        &#8592;
+    </div>
+
+    <div class="image-section">
+        <img src="smallvillage.jpg" alt="Image 3" class="blog-image">
+        <div id="caption">
+       
+    </div>
+
+      <h2>My Small Village</h2>
+
+
+    <div class="blog-container">
+
+        <div class="blog-content">
+<p class="moreserrat-font">The small place where I live is pretty lively nowadays, all thanks to the Exhibition ground, which is fully crowded with sellers from Kashmir, Rajasthan, Gujarat, Karnataka, Assam, small towns in the east, Himachal, and some famous ‘local’ sellers from nearby places. The interesting thing is these people have been coming for over 100 years now. Every year they come with different people but the same brand name, and most of them are the great-grandchildren of the early sellers. My home, just a few kilometers away from this place, allowed me to grow up listening to the same music, feeling the same crowd, and eating so many sweets from there.</p>
+<p class="moreserrat-font">When I was small, I used to go there with Papa to buy bangles, feather pens, religious ornaments, god idols, and mainly for the swings (they have better swings than in the Kingdom of Dreams and Promenade, believe me). But from the age of 12-13, I stopped going there because malls, shopping complexes, and other fancy markets attracted me more. I also realized that new markets were better for shopping. For the last 5-6 years, I have not been to the wonderful place close to my house because it wasn’t close enough to my heart.</p> 
+<p class="moreserrat-font">This year it was supposed to be the same, but</p> 
+<p class="moreserrat-font">A few days ago, with all the music that begins at night (every year it makes it hard for us to sleep soundly, but never mind, we are used to it), I heard someone playing the flute in the afternoon. Now I understand why Lord Krishna is everyone’s favorite. I was immensely surprised by the tune; it was a medical remedy for every struggling student. But then, before I could rejoice more, it stopped. No flute. It felt like a void. For the last 3-4 days, this man has been playing the flute around this time, and I absolutely love it.</p> 
+<p class="moreserrat-font">Yesterday, I decided to see who plays this flute because he passes in front of our house. From my terrace room, I saw him. And…I was surprised. He was an old man about 60-70 years of age and, oh my God! He was beautiful in every way. He wasn’t dressed in pretty clothes, but he was still very beautiful. He was smiling wherever he went, and people were smiling right back at him. He had a few street dogs (the ones considered to be insane by many of us here) that were enjoying his music silently. The workers, the police, the traffic people, the house people—everybody was enjoying his flute. I don’t know anything about him, but if I had met God, he would be something like this man. Just by his arrival, everyone gets happy; everyone pauses from all their worries and smiles at him. For a moment, it feels like this is the aim of life: this smile, this satisfaction, and this moment. Nothing less than this, and nothing more than this. And he, he moves on, all around the city, playing the flute with magic in him.</p> 
+<p class="moreserrat-font">I don’t usually write about people I meet because I think I’ve never met humans with stories of their own. It’s like most of us are just living someone else’s story, and we are used to it. But I guess I found this human a GOD, so…who doesn’t write about GOD, especially when he’s the one with the flute.❤️</p> 
+            
+            <br><br><br><br><br><br>
+
+            <div class="actions">
+                <button id="likeButton" onclick="toggleLike()">
+                    <img src="Screenshot 2023-12-24 at 10.08.42 PM.png" alt="Heart" style="width: 40px; height: 40px;">
+                </button>
+                <span id="likeCount">0 Likes</span>
+            </div>
+
+
+
+            <div id="commentDialog" class="hidden">
+                <textarea id="commentInput" placeholder="Write your comment..." class="comment-bg"></textarea>
+                <button onclick="postComment()" class = "post-comment">Post</button>
+            </div>
+
+            <div id="commentsContainer">
+                <!-- Comments will be appended here -->
+            </div>
+        </div>
+    </div>
+<br><br><br><br><br><br>
+    
+   <img src="bookman.png"
+     alt="Your Image">
+
+    <div id = bottom-navbar>
+        <p>&copy; 2023 Pravah. All Rights Reserved.</p>
+    </div>
+
+
+
+<script src="postpage.js" charset="utf-8"></script>
+</body>
+</html>
