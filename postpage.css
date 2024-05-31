@@ -1,145 +1,219 @@
-
-    body {
-      margin: 0;
-      padding: 30px;
-      font-family:'Montserrat', sans-serif;
-      font-size:large;
-      background-color: #FFFCF2;
-    }
-
-    #bottom-navbar {
-    margin-top: 40px; 
-    width: 100%;
-    background-color: #F0D29E;
-    padding: 1px;
-    text-align: center;
-    color: #5B2906;
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: large;
+  background-color: #FFFCF2;
 }
 
-    .image-section {
-      text-align: center;
-      margin-bottom: 100px;
-      margin-top: 20px;
-      
-    }
+#bottom-navbar {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #F0D29E;
+  padding: 1px;
+  text-align: center;
+  color: #5B2906;
+}
 
-    .blog-image {
-      margin-top: 70px;
-      height: 600px;
-      width: 600px;
-      border-radius: 100px;
-      transition: transform 0.3s ease-in-out;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.image-section {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
 
-    }
+.blog-image {
+  margin-top: 70px;
+  height: 600px;
+  width: 600px;
+  border-radius: 100px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    .blog-image:hover {
-     transform: scale(1.05);
-     
-     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-     border-color: #5B2906; 
-     border-radius: 300px;
-     }
+.blog-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  border-color: #5B2906;
+  border-radius: 300px;
+}
 
-    #caption {
-      margin-top: 10px;
-    }
+#caption {
+  margin-top: 10px;
+}
 
-    .blog-container {
-      text-align: center;
-      margin: 20px;
-    }
+.blog-container {
+  text-align: center;
+  margin: 20px;
+}
 
-    .realistic-shadow {
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
+.realistic-shadow {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    .blog-content {
-      margin-left: 50px;
-      margin-right: 30px;
-      padding-top: 50px;
-    }
+.blog-content {
+  margin-left: 50px;
+  margin-right: 30px;
+  padding-top: 50px;
+}
 
-    .moreserrat-font {
-      font-family:Arial, Helvetica, sans-serif;
-      text-align: left;
-      font-style: normal;
-    }
+.moreserrat-font {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-style: normal;
+}
 
-    .actions {
-      margin-top: 7px;
-    }
+.actions {
+  margin-top: 7px;
+}
 
-    #commentDialog {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-    }
+#commentDialog {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
 
-    #commentDialog textarea {
-      margin-bottom: 10px;
-      border: 2px solid #FFFCF2;
-      transition: background-color 0.3s ease;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+#commentDialog textarea {
+  margin-bottom: 10px;
+  border: 2px solid #FFFCF2;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    #commentDialog textarea:hover {
-      background-color: #f5efdb;
-    }
+#commentDialog textarea:hover {
+  background-color: #f5efdb;
+}
 
-    .hidden {
-      display: none;
-    }
+.hidden {
+  display: none;
+}
 
-    .comment {
-      margin-left: 5px;
-      font-family: 'Courier New', Courier, monospace;
-      color:#5B2906;
-      text-align: left;
-      padding-top: 30px;
-      
-    }
+.comment {
+  margin-left: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #5B2906;
+  text-align: left;
+  padding-top: 30px;
+}
 
-    #commentsContainer {
-      margin-top: 20px;
-      margin-left: 0px;
-    }
+#commentsContainer {
+  margin-top: 20px;
+  margin-left: 0px;
+}
 
-    .post-comment {
-      background-color: #e8dfdc;
-      margin-left: 239px;
-      height: 50px;
-      width: 70px;
-      border: 1px #FFFCF2;
-      transition: background-color 0.3s ease;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+.post-comment {
+  background-color: #e8dfdc;
+  margin-left: 0; /* Align button to the left by default */
+  height: 50px;
+  width: 70px;
+  border: 1px #FFFCF2;
+  transition: background-color 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    .post-comment:hover {
-      background-color: #f5efdb;
-      
-    }
+.post-comment:hover {
+  background-color: #f5efdb;
+}
 
-    .comment-bg {
-      background-color: #FFFCF2;
-      color: rgb(21, 21, 21);
-      margin-left: 2px;
-      height: 100px;
-      width: 300px;
-    }
+.comment-bg {
+  background-color: #FFFCF2;
+  color: rgb(21, 21, 21);
+  margin-left: 2px;
+  height: 100px;
+  width: 300px;
+}
 
+#backButton {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  cursor: pointer;
+}
 
-    #backButton {
-      position: absolute;
-      top: 40px;
-      left: 70px;
-      cursor: pointer;
-    }
+#likeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-    #likeButton {
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
+@media (max-width: 1024px) {
+  .blog-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+  }
+
+  .blog-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 30px;
+  }
+
+  .post-comment {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .image-section {
+    margin-bottom: 20px;
+  }
+
+  .blog-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  .blog-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+  }
+
+  .moreserrat-font {
+    font-size: medium;
+    text-align: justify;
+  }
+
+  #commentDialog textarea {
+    width: 100%;
+  }
+
+  .post-comment {
+    margin-left: 0;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .moreserrat-font {
+    font-size: small;
+    text-align: justify;
+  }
+
+  .comment-bg {
+    width: 100%;
+  }
+
+  #backButton {
+    top: 20px;
+    left: 20px;
+  }
+
+  #bottom-navbar {
+    padding: 5px;
+    font-size: small;
+  }
+}
