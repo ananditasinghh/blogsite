@@ -162,8 +162,12 @@ body.dark-mode {
         max-width: 1000px;
     }
 
+
+    
+}
+
+@media (max-width: 480px) {
 #bottom-navbar {
     padding: 10px;
   }
-    
 }
