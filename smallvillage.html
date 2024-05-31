@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="postpage.css">
+</head>
+
+<body>
+
+    <div id="backButton" onclick="goBack()">
+        
+        &#8592;
+    </div>
+
+    <div class="image-section">
+        <img src="blog3.png" alt="Image 3" class="blog-image">
+        <div id="caption">
+       
+    </div>
+
+      <h2>My Small Village</h2>
+
+
+    <div class="blog-container">
+
+        <div class="blog-content">
+            <p class="moreserrat-font">
+I live in a small village. J’appartiens d’un petit village. 
+              The old folks here believe in everything that busy city lives don't: 
+              ghosts, magic, goodness, and literature. The 94-year-old man who can barely 
+              speak sings his teenage poems to little kids. The lonely man of the city is the 
+              most charming fellow of the village. The poor cobbler of the city treats children 
+              with Alphonso mangoes every hot spell in June. The rejected playwright of the city narrates his 
+              fiction and cold stories every dark night under the same tree, receiving all the appreciation and love from everyone.
+              The sloshy watchman of the city is always found blabbering ghost stories. The retired driver of the city writes about 
+              magic, science, and politics. The small businessman of the city is the richest man in the village; he's happy and kind. 
+              The priest of the city temple does not let anyone make a worshipping place in the village, saying, “God is a human, 
+              treat him well and help him when needed. And you’ll have the best pilgrimage of life.” The retired strict teacher of
+              the city lets the children play in open fields with no books and breathe open knowledge with no texts. The workaholic
+              office man of the city loves to sit in the farmland, gazing at the stars and just sharing his silence with anyone at random. 
+              The unknown flute seller of the city is the favorite musician of the village. The uncles of the city are the 'akas' of the village. 
+              The workers of the city are the people of the village. The flawless robots of the city are the imperfect humans of the village.
+              The sky of dreams and stars of the city is the happiness of the village. The money of the city is the paper boat of the village. 
+              The house of the city is the home of the village. And the ambitious land, the competitive air, and the expensive dreams of the
+              city are just laughter, smiles, occasions, love, and bliss in the village.
+
+            </p>
+  <p class="moreserrat-font">
+As a child, growing up with these people and learning from them, I believed that all life in the city came from my village. But as a young man, working 
+          in the city and being one of these people, I now know that all life was never in the city but just in my small village. My rich, beautiful, starless 
+          city is dull and busy. My rich city holds no time for grief but overflows with regrets. My rich city has loud songs at parties but no music in the soul.
+          My rich city has vivid dreams but tiring hearts. My rich city has everything my poor village doesn’t. Not when alone or bored, but amidst the chaos,
+          I feel my village was poor but very happy. And only if I could carry my little happy village in my heart forever, my city would also be a smiling land. 
+          After all, they both were just places: one in search of fleeting happiness and the other living in it.
+
+  </p> 
+            
+            
+            <br><br><br><br><br><br>
+
+            <div class="actions">
+                <button id="likeButton" onclick="toggleLike()">
+                    <img src="Screenshot 2023-12-24 at 10.08.42 PM.png" alt="Heart" style="width: 40px; height: 40px;">
+                </button>
+                <span id="likeCount">0 Likes</span>
+            </div>
+
+
+
+            <div id="commentDialog" class="hidden">
+                <textarea id="commentInput" placeholder="Write your comment..." class="comment-bg"></textarea>
+                <button onclick="postComment()" class = "post-comment">Post</button>
+            </div>
+
+            <div id="commentsContainer">
+                <!-- Comments will be appended here -->
+            </div>
+        </div>
+    </div>
+<br><br><br><br><br><br>
+    
+   <img src="bookman.png"
+     alt="Your Image">
+
+    <div id = bottom-navbar>
+        <p>&copy; 2023 Pravah. All Rights Reserved.</p>
+    </div>
+
+
+
+<script src="postpage.js" charset="utf-8"></script>
+</body>
+</html>
