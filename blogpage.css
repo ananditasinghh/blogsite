@@ -11,6 +11,16 @@ body.dark-mode {
     transition: background-color 0.3s, color 0.3s;
 }
 
+#bottom-navbar {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #F0D29E;
+  padding: 10px;
+  text-align: center;
+  color: #5B2906;
+}
+
 
 #intro_0,
 #intro_1 {
@@ -151,4 +161,9 @@ body.dark-mode {
     .blog-container {
         max-width: 1000px;
     }
+
+#bottom-navbar {
+    padding: 10px;
+  }
+    
 }
