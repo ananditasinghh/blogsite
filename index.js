@@ -15,7 +15,7 @@ function nextSlide() {
 
 showSlide(currentSlide);
 // Auto slide every 3 seconds
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 2000);
 
 function scrollToSection(sectionId) {
   document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
